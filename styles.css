@@ -1,0 +1,102 @@
+/* Base Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #575757;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* To-Do List */
+  #todo input {
+    padding: 0.5rem;
+    width: 60%;
+    margin-right: 0.5rem;
+  }
+  
+  #taskList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #taskList li {
+    margin-top: 0.5rem;
+    background-color: #e3e3e3;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #taskList button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    #todo input {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
